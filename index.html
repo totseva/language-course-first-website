@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Language Course</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Languages Made Simple</h1>
+        <h2>Learn English, German, or Japanese with confidence.</h2>
+
+        <div class="gb">
+        <p>English (UK) <span class="price">From €199</span><br><small>English connects you to the world. Learn to communicate confidently for work, travel, and everyday situations. Build clear, practical English you can use anywhere.</small></p>
+        </div>
+
+        <div class="de">
+        <p>German <span class="price">From €219</span><br><small>German opens doors across Europe. Gain access to strong career opportunities, top education, and life in German-speaking countries. Learn to speak with confidence from the start.</small></p>
+        </div>
+
+        <div class="jp">
+        <p>Japanese <span class="price">From €229</span><br><small>Japanese lets you experience Japan beyond subtitles. Communicate naturally while exploring culture, travel, and modern business. Start speaking step by step, even as a complete beginner. </small></p>
+        </div>
+
+        <script>
+           $(function() {
+               $('div').on('click', function() {
+                   $(this).toggleClass('show-description');
+               });
+           });
+        </script>
+
+    </body>
+ </html>
